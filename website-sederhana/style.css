@@ -1,0 +1,220 @@
+/* CSS Reset */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Clear Fix */
+
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
+
+/* My CSS */
+
+body {
+	font 				: 16px/28px arial, sans-serif;
+	background-image 	: url('images/2.png')
+}
+
+.topbar {
+	position 			: fixed;
+	top 				: 0;
+	right 				: 0;
+	left 				: 0;
+	height 				: 50px;
+	background-color 	: skyblue;
+	border-bottom 		: 5px solid salmon;
+	z-index 			: 9999;
+}
+
+.container {
+	background-color 	: white;
+	width 				: 1400px;
+	margin 				: auto;
+	margin-top 			: 100px;
+	position 			: relative;
+}
+
+.container a.pita {
+	display 			: inline-block;
+	width 				: 200px;
+	height 				: 200px;
+	background-image 	: url('images/3.png')
+}
+
+.pita {
+	position 			: absolute;
+	right 				: -28px;
+	top 				: -22px;
+}
+
+.header h1 {
+	display 			: inline-block;
+	font-size 			: 50px;
+	margin 				: 20px 10px;
+	margin-top			: 50px;
+	font-weight 		: bold;
+}
+
+.header ul li {
+	display 			: inline-block;
+}
+
+.header ul li a {
+	display 			: inline-block;
+	text-decoration 	: none;
+	color 				: salmon;
+	margin 				: 0px 10px;
+	padding 			: 5px;
+}
+
+.header ul li a:hover {
+	background-color 	: skyblue;
+}
+
+.hero {
+	background-image 	: url('images/1.jpg');
+	background-size 	: cover;
+	background-position : 0px 980px;
+	height 				: 500px;
+	margin 				: 50px 0px;
+	border-top 			: 5px solid salmon;
+	border-bottom 		: 5px solid skyblue;
+}
+
+.main {
+	padding 			: 10px;
+	width 				: 1000px;
+	float 				: left;
+}
+
+.main h2 {
+	font-size 			: 40px;
+	margin-bottom 		: 10px;
+}
+
+.main p.penulis {
+	font-size 			: 15px;
+	margin 				: 0px;
+}
+
+.main p.penulis a {
+	text-decoration 	: none;
+	color 				: salmon;
+}
+
+.main p {
+	margin 				: 30px 0px;
+	text-align 			: justify;
+}
+
+.sidebar {
+	padding 			: 10px;
+	width 				: 340px;
+	float 				: right;
+}
+
+.sidebar h3 {
+	font-size 			: 30px;
+	margin-bottom 		: 20px;
+}
+
+.sidebar img {
+	width 				: 100px;
+	height 				: 100px;
+	float 				: left;
+	padding-right 		: 10px;
+}
+
+.sidebar p {
+	text-align 			: justify;
+	line-height 		: 20px;
+}
+
+.footer {
+	background-color 	: darkgrey;
+	padding 			: 30px;
+	margin-top 			: 100px;
+}
+
+.footer h3 {
+	font-size 			: 20px;
+	text-align 			: center;
+	color 				: white;
+}
+
+.footer a {
+	font-size 			: 20px;
+	text-align 			: center;
+	color 				: salmon;
+	text-decoration 	: none;
+}
